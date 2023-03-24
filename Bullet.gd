@@ -9,5 +9,6 @@ func _process(delta):
 
 func OnCollisionEnter(body):
 	GlobalVars.bullet_count += 1
+	print("Bullet replaced")
 	body.queue_free()
 	queue_free()

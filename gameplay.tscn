@@ -1,42 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://80qgwq0exvce"]
+[gd_scene load_steps=4 format=3 uid="uid://80qgwq0exvce"]
 
 [ext_resource type="PackedScene" uid="uid://ce1iln64lwjp1" path="res://Player.tscn" id="1_14t0c"]
 [ext_resource type="PackedScene" uid="uid://owhicldxllel" path="res://Comet.tscn" id="2_5tgnr"]
 [ext_resource type="Script" path="res://spawner.gd" id="2_uwr0c"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnoty"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ubdc"]
 
 [node name="gameplay" type="Node2D"]
 position = Vector2(-1, -4)
 scale = Vector2(0.563332, 0.704508)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_14t0c")]
-position = Vector2(599.643, 581.738)
+position = Vector2(599.643, 661.454)
 scale = Vector2(6, 6)
-
-[node name="Right Barrier" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Barrier"]
-position = Vector2(1137, 428)
-scale = Vector2(1.88309, 22.0555)
-shape = SubResource("RectangleShape2D_rnoty")
-
-[node name="Left Barrier" type="StaticBody2D" parent="."]
-position = Vector2(20, -2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Barrier"]
-position = Vector2(-2, 428)
-scale = Vector2(1.88309, 22.0555)
-shape = SubResource("RectangleShape2D_rnoty")
-
-[node name="Top Barrier" type="Area2D" parent="."]
-position = Vector2(599, 0)
-scale = Vector2(68.48, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Top Barrier"]
-shape = SubResource("RectangleShape2D_8ubdc")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4.0

@@ -3,7 +3,7 @@ extends Timer
 @export var Comet: PackedScene
 
 func _ready():
-	spawnComet()
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

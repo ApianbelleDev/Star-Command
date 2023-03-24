@@ -15,3 +15,4 @@ func shoot():
 		owner.add_child(b)
 		b.global_transform = $Marker2D.global_transform
 	GlobalVars.bullet_count -= 1
+	print("Bullet used")
