@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://c2b4mw0hh06a2"]
+
+[ext_resource type="Texture2D" uid="uid://cee5h41vquftb" path="res://Sprites/Menu Graphics/Title.png" id="1_btak0"]
+[ext_resource type="Script" path="res://Scripts/MenuControl.gd" id="1_x14cg"]
+[ext_resource type="Texture2D" uid="uid://dtc0sm4xxtyjt" path="res://Sprites/Menu Graphics/Border.png" id="2_fp8tr"]
+[ext_resource type="Texture2D" uid="uid://dy2lu6r28sjjj" path="res://Sprites/Menu Graphics/play.png" id="3_hufxp"]
+[ext_resource type="Texture2D" uid="uid://dm7s7eoj3wqlx" path="res://Sprites/Menu Graphics/Options.png" id="4_gd3sv"]
+[ext_resource type="Texture2D" uid="uid://coy4e3nbsn2ke" path="res://Sprites/Menu Graphics/Exit.png" id="5_bji07"]
+[ext_resource type="FontFile" uid="uid://baltmmsrgqawc" path="res://SpaceMission-rgyw9.otf" id="7_k4huu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x14cg")
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 25.0
+offset_right = 507.0
+offset_bottom = 194.0
+texture = ExtResource("1_btak0")
+stretch_mode = 5
+
+[node name="Border" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 173.888
+offset_top = 225.0
+offset_right = 470.888
+offset_bottom = 464.0
+texture = ExtResource("2_fp8tr")
+
+[node name="Play" type="TextureRect" parent="Border"]
+layout_mode = 0
+offset_left = 96.211
+offset_top = 43.0
+offset_right = 183.211
+offset_bottom = 81.0
+focus_next = NodePath("../Options")
+texture = ExtResource("3_hufxp")
+stretch_mode = 5
+
+[node name="PlayButton" type="Button" parent="Border/Play"]
+layout_mode = 0
+offset_right = 93.0
+offset_bottom = 38.0
+flat = true
+
+[node name="Options" type="TextureRect" parent="Border"]
+layout_mode = 0
+offset_left = 85.743
+offset_top = 95.0
+offset_right = 204.743
+offset_bottom = 145.0
+focus_next = NodePath("../Exit")
+focus_previous = NodePath("../Play")
+texture = ExtResource("4_gd3sv")
+stretch_mode = 5
+
+[node name="OptionsButton" type="Button" parent="Border/Options"]
+layout_mode = 0
+offset_right = 122.0
+offset_bottom = 50.0
+flat = true
+
+[node name="Exit" type="TextureRect" parent="Border"]
+layout_mode = 0
+offset_left = 96.211
+offset_top = 160.0
+offset_right = 178.211
+offset_bottom = 205.0
+focus_previous = NodePath("../Options")
+texture = ExtResource("5_bji07")
+stretch_mode = 5
+
+[node name="ExitButton" type="Button" parent="Border/Exit"]
+layout_mode = 0
+offset_right = 87.0
+offset_bottom = 47.0
+flat = true
+
+[node name="psText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 332.0
+offset_right = 453.0
+offset_bottom = 379.0
+theme_override_fonts/font = ExtResource("7_k4huu")
+theme_override_font_sizes/font_size = 44
+text = "Press start"
+horizontal_alignment = 1
+
+[connection signal="button_down" from="Border/Play/PlayButton" to="." method="_on_play_button_button_down"]

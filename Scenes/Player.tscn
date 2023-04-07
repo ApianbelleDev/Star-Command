@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://mc63r16yodi4"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController2D.gd" id="1_dlpdy"]
+[ext_resource type="PackedScene" uid="uid://ufb2vlmkbavq" path="res://Scenes/Bullet.tscn" id="2_iah4l"]
+[ext_resource type="Texture2D" uid="uid://cjsxderjhatlh" path="res://Sprites/Gameplay Graphics/Turret.png" id="3_6gyi8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vy3o"]
+size = Vector2(38, 11)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(335, 256)
+scale = Vector2(2.5, 2.5)
+script = ExtResource("1_dlpdy")
+Bullet = ExtResource("2_iah4l")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-1.5, 74)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 83.5)
+shape = SubResource("RectangleShape2D_8vy3o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.5, 80)
+texture = ExtResource("3_6gyi8")

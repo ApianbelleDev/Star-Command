@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7x5xhnhhf70w"
-path="res://.godot/imported/Bullet.png-166c5f5d643c7e49aef2de7a06516757.ctex"
+uid="uid://b4q8fxifmljc4"
+path="res://.godot/imported/Comet_2.png-ddef33a21739de104778df1f3f52fe9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Bullet.png"
-dest_files=["res://.godot/imported/Bullet.png-166c5f5d643c7e49aef2de7a06516757.ctex"]
+source_file="res://Sprites/Gameplay Graphics/Comet_2.png"
+dest_files=["res://.godot/imported/Comet_2.png-ddef33a21739de104778df1f3f52fe9c.ctex"]
 
 [params]
 

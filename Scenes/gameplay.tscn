@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://xjlev7r2ofvg"]
+
+[ext_resource type="PackedScene" uid="uid://mc63r16yodi4" path="res://Scenes/Player.tscn" id="1_kxqh8"]
+[ext_resource type="Script" path="res://Scripts/spawner.gd" id="2_x4stl"]
+[ext_resource type="PackedScene" uid="uid://cuaxt6ffw5r1t" path="res://Scenes/Comet.tscn" id="3_oss5m"]
+
+[node name="gameplay" type="Node2D"]
+position = Vector2(-1, -4)
+scale = Vector2(0.563332, 0.704508)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_kxqh8")]
+position = Vector2(607.102, 462.734)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+script = ExtResource("2_x4stl")
+Comet = ExtResource("3_oss5m")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timer_timeout"]

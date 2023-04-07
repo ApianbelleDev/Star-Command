@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxe204w5nu18w"
-path="res://.godot/imported/Comet_3.png-2664b58db00794adabfb43b355a0bab5.ctex"
+path="res://.godot/imported/Comet_3.png-4bc61c2e760d164ccd061f3836b45b3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Comet_3.png"
-dest_files=["res://.godot/imported/Comet_3.png-2664b58db00794adabfb43b355a0bab5.ctex"]
+source_file="res://Sprites/Gameplay Graphics/Comet_3.png"
+dest_files=["res://.godot/imported/Comet_3.png-4bc61c2e760d164ccd061f3836b45b3f.ctex"]
 
 [params]
 

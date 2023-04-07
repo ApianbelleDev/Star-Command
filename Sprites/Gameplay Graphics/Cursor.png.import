@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4q8fxifmljc4"
-path="res://.godot/imported/Comet_2.png-21c1bac99459a145af73a9671c6942be.ctex"
+uid="uid://b21lvxawbqjkx"
+path="res://.godot/imported/Cursor.png-18b605585421c7af63e4c52828fb56eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Comet_2.png"
-dest_files=["res://.godot/imported/Comet_2.png-21c1bac99459a145af73a9671c6942be.ctex"]
+source_file="res://Sprites/Gameplay Graphics/Cursor.png"
+dest_files=["res://.godot/imported/Cursor.png-18b605585421c7af63e4c52828fb56eb.ctex"]
 
 [params]
 

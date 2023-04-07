@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 2000
+@export var speed = 5000
 @export var Bullet: PackedScene
 
 func _physics_process(delta):
