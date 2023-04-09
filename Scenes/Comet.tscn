@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://btu5wmaubr1r0" path="res://Sprites/Gameplay Graphics/Comet_1.png" id="2_eqo1s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qmnix"]
-size = Vector2(20, 120)
+size = Vector2(9.41559, 58)
 
 [node name="Comet" type="Area2D"]
 position = Vector2(331, 27)
+scale = Vector2(2.36, 2)
 script = ExtResource("1_i3xhg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(8, 8)
 texture = ExtResource("2_eqo1s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

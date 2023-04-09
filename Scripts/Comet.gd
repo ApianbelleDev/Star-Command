@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed = 100
+var speed = 50
 
 @onready var screenSize = get_viewport().get_visible_rect().size
 
