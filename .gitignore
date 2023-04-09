@@ -1,2 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
+# repo ignores
+build/
+export_presets.cfg
+*.otf
+*.import

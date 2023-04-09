@@ -13,7 +13,7 @@ config_version=5
 config/name="Star Command"
 run/main_scene="res://Scenes/Menu.tscn"
 config/features=PackedStringArray("4.0")
-config/icon="res://Sprites/Gameplay Graphics/DMG_MOCKUP.png"
+config/icon="res://Sprites/Gameplay Graphics/Icon.png"
 
 [autoload]
 
